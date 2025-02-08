@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Counter = () => {
     const count = useSelector((state) => state.counter.count);
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState({});
     const dispatch = useDispatch();
 
     const handleIncrement = () => {
